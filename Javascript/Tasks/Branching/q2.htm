@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--  FIND OUT THE GRADE ON THE BASIS OF PERCENTAGE -->
+    <script>
+        var sub1Marks = Number(prompt("Enter marks out of 100 for subject 1"));
+        var sub2Marks = Number(prompt("Enter marks out of 100 for subject 2"));
+        var sub3Marks = Number(prompt("Enter marks out of 100 for subject 3"));
+        var sub4Marks = Number(prompt("Enter marks out of 100 for subject 4"));
+        var sub5Marks = Number(prompt("Enter marks out of 100 for subject 5"));
+
+        var totalMarks = 500;
+        var obtainedMarks = sub1Marks + sub2Marks + sub3Marks + sub4Marks + sub5Marks;
+        var percentage = (obtainedMarks / totalMarks) * 100;
+        
+        document.write("Marks obtained: " + obtainedMarks + "<br>");
+        document.write("Total marks: " + totalMarks + "<br>");
+        document.write("Percentage: " + percentage + "% <br>");
+
+        var grade;
+
+        if (percentage >= 90) {
+            grade = "A";
+        }
+        else if (percentage >= 70 && percentage < 90) {
+            grade = "B";
+        }
+        else if (percentage >= 50 && percentage < 70) {
+            grade = "C";
+        }
+        else if (percentage >= 30 && percentage < 50) {
+            grade = "D";
+        }
+        else {
+            grade = "F";
+        }
+
+        document.write("Grade: " + grade);
+    </script>
+</body>
+</html>

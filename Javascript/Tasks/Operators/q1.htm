@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Perform all arithmetic operations -->
+    <h1>Arithmetic Operations</h1>
+    <p id='a'></p><br>
+    <p id='b'></p><br>
+    <p id='add'></p><br>
+    <p id='sub'></p><br>
+    <p id='mul'></p><br>
+    <p id='div'></p><br>
+    <p id='mod'></p><br>
+
+    <script>
+        var a = 10;
+        var b = 20;
+        var c = a + b;
+        var d = a - b;
+        var e = a * b;
+        var f = a / b;
+        var g = a % b;
+
+        document.getElementById('a').innerHTML = 'a = ' + a;
+        document.getElementById('b').innerHTML = 'b = ' + b;
+        document.getElementById('add').innerHTML = 'a + b = ' + c;
+        document.getElementById('sub').innerHTML = 'a - b = ' + d;
+        document.getElementById('mul').innerHTML = 'a * b = ' + e;
+        document.getElementById('div').innerHTML = 'a / b = ' + f;
+        document.getElementById('mod').innerHTML = 'a % b = ' + g;
+    </script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // ARRAY OF EMPLOYEE OBJECTS AND SORT ARRAY ON THE BASIS OF SALARY
+        var employees = [
+            {   
+                id: 6356,
+                name: 'John',
+                salary: '37000'
+            },
+            {
+                id: 8248,
+                name: 'Purvesh',
+                salary: '52000'
+            },
+            {
+                id: 6785,
+                name: 'Jack',
+                salary: '84000'
+            },
+            {
+                id: 9856,
+                name: 'Tom',
+                salary: '65000'
+            },
+            {
+                id: 8652,
+                name: 'Matt',
+                salary: '29000'
+            }
+        ];
+        employees.sort(function (a, b) {
+            return a.salary - b.salary;
+        });
+
+        // PRINT EMPLOYEE OBJECTS IN THE ARRAY
+        for (var i = 0; i < employees.length; i++) {
+            document.write('Employee ID: ' + employees[i].id + '<br>' + 'Name:' + employees[i].name + '<br>' + 'Salary: ' + employees[i].salary + '<br><br>');
+        }
+
+    </script>
+</body>
+</html>

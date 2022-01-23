@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // FUNCTIONS FOR ALL THE ARITHMETIC OPERATIONS
+        function add(a, b) {
+            return a + b;
+        }
+
+        function sub(a, b) {
+            return a - b;
+        }
+
+        function mul(a, b) {
+            return a * b;
+        }
+
+        function div(a, b) {
+            return a / b;
+        }
+
+        function mod(a, b) {
+            return a % b;
+        }
+
+        var a = Number(prompt('Enter a number'));
+        var b = Number(prompt('Enter another number'));
+
+        document.write('a = ' + a + '<br>');
+        document.write('b = ' + b + '<br><br>');
+
+        document.write('a + b = ' + add(a, b) + '<br>');
+        document.write('a - b = ' + sub(a, b) + '<br>');
+        document.write('a * b = ' + mul(a, b) + '<br>');
+        document.write('a / b = ' + div(a, b) + '<br>');
+        document.write('a % b = ' + mod(a, b) + '<br>');
+    </script>
+</body>
+</html>

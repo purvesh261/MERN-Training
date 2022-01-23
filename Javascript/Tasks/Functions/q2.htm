@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // FUNCTIONS TO CALCULATE AREA OF CIRCLE, RECTANGLE, TRIANGLE, SQUARE
+        const pi = 3.14;
+        function areaOfCircle(radius) {
+            var area = pi * radius * radius;
+            document.write('Area of circle is ' + area + '<br>');
+        }
+
+        function areaOfRectangle(length, breadth) {
+            var area = length * breadth;
+            document.write('Area of rectangle is ' + area + '<br>');
+        }
+
+        function areaOfTriangle(base, height) {
+            var area = (base * height) / 2;
+            document.write('Area of triangle is ' + area + '<br>');
+        }
+
+        function areaOfSquare(length) {
+            var area = length * length;
+            document.write('Area of square is ' + area + '<br>');
+        }
+
+        var radius = Number(prompt('Enter the radius of circle'));
+        areaOfCircle(radius);
+
+        var length = Number(prompt('Enter the length of rectangle'));
+        var breadth = Number(prompt('Enter the breadth of rectangle'));
+        areaOfRectangle(length, breadth);
+
+        var base = Number(prompt('Enter the base of triangle'));
+        var height = Number(prompt('Enter the height of triangle'));
+        areaOfTriangle(base, height);
+
+        var lengthSquare = Number(prompt('Enter the length of square'));
+        areaOfSquare(lengthSquare);
+
+
+    </script>
+</body>
+</html>
