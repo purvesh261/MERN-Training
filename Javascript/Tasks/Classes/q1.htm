@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class Person {
+            constructor(name, age, phone, email) {
+                this.name = name;
+                this.age = age;
+                this.phone = phone;
+                this.email = email;
+            }
+
+            display()
+            {
+                document.write('Name: ' + this.name + '<br>' + 'Age: ' + this.age + '<br>' + 'Phone: ' + this.phone + '<br>' + 'Email: ' + this.email + '<br><br>');
+            }
+            
+            getName()
+            {
+                return this.name;
+            }
+
+            getAge()
+            {
+                return this.age;
+            }
+
+            getPhone()
+            {
+                return this.phone;
+            }
+
+            getEmail()
+            {
+                return this.email;
+            }
+
+        }
+
+        var person1 = new Person('John', 25, '9564937890', 'johnmail@gmail.com');
+
+        person1.display();
+
+        person1Name = person1.getName();
+        
+    </script>
+</body>
+</html>
