@@ -5,6 +5,7 @@ import Display2 from './Assignment3.js';
 import Employees from './Assignment2.js';
 import Display3 from './funcComponent.js';
 import Calculator from './Calculator2.js';
+import Select from './Select.js';
 
 function App() {
   return (
@@ -15,7 +16,8 @@ function App() {
       {/* <Employees /> */}
       {/* <Display2 /> */}
       {/* <Display3 /> */}
-      <Calculator />
+      {/* <Calculator /> */}
+      <Select />
     </div>
   );
 }
