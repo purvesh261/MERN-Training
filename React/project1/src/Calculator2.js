@@ -64,7 +64,6 @@ function Calculator () {
                 <h5>Total Amount: ₹ {totalAmount}</h5>
                 <h5>Amount per month: ₹ {amountPerMonth}</h5>
             </div>
-            
 
         </div>
     )

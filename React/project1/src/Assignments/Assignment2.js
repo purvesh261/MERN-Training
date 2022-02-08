@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import FormStatus from './FormStatus';
-import './App.css'
+import '../App.css'
 
 // CRUD operations
 class Employees extends Component{

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 function Display3() {
-    const [empId, setEmpId] = useState(""); // first one is always a variable and second is the method to assign value to the aforementioned variable (argument is the initial value of the variable)
+    const [empId, setEmpId] = useState("");
     const [empName, setEmpName] = useState("");
     console.log(empId)
     const onSubmit = () => {
