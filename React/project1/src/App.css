@@ -14,6 +14,16 @@
   background: #eee787;
 }
 
+.center{
+  margin: auto;
+  width: 50%;
+  padding: 8% 10% 12% 10%;
+}
+
+.Crud {
+  padding-bottom: 7%;
+}
+
 /* .App {
   text-align: center;
 }

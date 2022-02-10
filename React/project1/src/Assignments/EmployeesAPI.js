@@ -37,16 +37,16 @@ class EmployeesAPI extends Component {
         }) 
 
     }
-    onUpdateHandler = (event) => {
-        let { }
-    }
+    // onUpdateHandler = (event) => {
+    //     let { }
+    // }
     onDeleteHandler = (id) => {
         const URL = "http://localhost:4000/employee/" + id;
         axios.delete(URL).then((response) => {
             console.log(response)
         })
     }
-    onChangeDLL = (item ) => {
+    onChangeDLL = (e) => {
         let { value } = e.target;
         this.setState({selectId: parseInt(value)});
     }

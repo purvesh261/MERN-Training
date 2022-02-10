@@ -55,7 +55,6 @@ function Products () {
                 <div className="col-4">
                     <h1>Create Product</h1>
                     <form className='formGroup mx-2 my-5' onSubmit={onSubmitHandler}>
-                        {/* {showAlert? <FormStatus filled={filled} passwordLength={true}/>: null} */}
                         <label>Product Code:</label><br/>
                         <input type="text"
                             name="id"

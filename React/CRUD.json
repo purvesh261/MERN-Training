@@ -1,0 +1,108 @@
+{
+  "employee": [
+    {
+      "id": 101,
+      "employeeName": "Employee One",
+      "address": "H.No.5352",
+      "city": "Mumbai"
+    },
+    {
+      "id": 102,
+      "employeeName": "Employee Two",
+      "address": "H.No.7442",
+      "city": "New Delhi"
+    },
+    {
+      "id": 103,
+      "employeeName": "Employee 3",
+      "address": "H.No.9520",
+      "city": "New Delhi"
+    },
+    {
+      "id": 104,
+      "employeeName": "Employee Four",
+      "address": "H.No.2560",
+      "city": "Ahmedabad"
+    },
+    {
+      "id": 106,
+      "employeeName": "Employee 6",
+      "address": "H.No.3140",
+      "city": "Ahmedabad"
+    },
+    {
+      "id": 107,
+      "employeeName": "Employee Seven",
+      "address": "H.No.1863",
+      "city": "New Delhi"
+    },
+    {
+      "id": 108,
+      "employeeName": "Employee Eight",
+      "address": "H.No.4565",
+      "city": "Mumbai"
+    },
+    {
+      "id": 109,
+      "employeeName": "Employee Nine",
+      "address": "H.No.9663",
+      "city": "Chennai"
+    },
+    {
+      "id": 110,
+      "employeeName": "Employee Ten",
+      "address": "H.No.6767",
+      "city": "Ahmedabad"
+    }
+  ],
+  "vendor": [
+    {
+      "id": 101,
+      "name": "Vendor One",
+      "contact": 9283274830,
+      "type": true
+    },
+    {
+      "id": 102,
+      "name": "Vendor Two",
+      "contact": 8616895423,
+      "type": true
+    },
+    {
+      "id": 103,
+      "name": "Vendor Three",
+      "contact": "6484652159",
+      "type": true
+    },
+    {
+      "id": 104,
+      "name": "Vendor Four",
+      "contact": 9826548956,
+      "type": true
+    },
+    {
+      "id": 105,
+      "name": "Vendor Five",
+      "contact": 7459632568,
+      "type": true
+    },
+    {
+      "id": 106,
+      "name": "Vendor Six",
+      "contact": 6859486265,
+      "type": false
+    },
+    {
+      "id": 101,
+      "name": "Vendor Seven",
+      "contact": 8526497365,
+      "type": true
+    },
+    {
+      "id": 101,
+      "name": "Vendor Eight",
+      "contact": 8594625786,
+      "type": false
+    }
+  ]
+}
