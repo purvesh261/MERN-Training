@@ -1,0 +1,56 @@
+import React, { useState, useEffect } from 'react';
+import axios from 'axios';
+
+function Client2() 
+{
+    let [clientData, setClientData] = useState();
+    let [loading, setLoading] = useState(true);
+    let [clientId, setClientID] = useState();
+
+    useEffect(() => {
+        axios.get("http://localhost:4001/clients/").then(response => {
+            console.log(response);
+            setClientData(response.data);
+            setLoading(false)
+        });
+    },[]);
+
+    return(
+        
+        <>
+            <h1>clients</h1>
+            <table className='table table-striped'>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Details</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    { (loading === false) ? clientData.map((item,idx) => {
+                            return(
+                                <>
+                                <tr key={idx}>
+                                    <td>{item.id}</td>
+                                    <td>{item.clientName}</td>
+                                    <td><button className='btn btn-primary' onClick={() => setClientID(clientId === item.id? null : item.id)}>Details</button></td>
+                                </tr>
+                                {clientId === item.id? 
+                                <tr>
+                                    <td colspan="3" className="text-primary">Phone: {item.phone}<br/>Area: {item.area}</td>
+                                </tr>:null}
+                                </>
+                            )
+                        
+                    }) : "Loading..."}
+                
+                </tbody>
+                
+            </table>
+        </>
+        
+    )
+}
+
+export default Client2;
