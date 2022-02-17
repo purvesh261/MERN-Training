@@ -1,0 +1,14 @@
+{
+    "users":[
+        {
+            "name":"purvesh",
+            "phone":965842364,
+            "city":"mehsana"
+        },
+        {
+            "name":"jay",
+            "phone":94586254,
+            "city":"ahmedabad"
+        }
+    ]
+}
