@@ -11,7 +11,6 @@ import Confirmation from './Components/Confirmation';
 import MyAccount from './Components/MyAccount';
 import Login from './Components/Login';
 import SignUp from './Components/SignUp';
-import Admin from './Components/Admin';
 import AdminUsers from './Components/Admin/AdminUsers';
 import AdminProducts from './Components/Admin/AdminProducts';
 import AddProduct from './Components/Admin/AddProduct';
@@ -21,6 +20,8 @@ import NewMR from './Components/Admin/NewMR';
 
 
 export const LoginDetails = createContext({});
+
+
 
 function App() {
   const [loggedIn, setLogin] = useState(false); 
@@ -32,7 +33,6 @@ function App() {
     {
       axios.put(`/users/${currentUser._id}/update/cart`, {cart: login.cart})
           .then((res) => {
-            console.log(res);
             login.currentUser.cart = login.cart;
             login.setCurrentUser(login.currentUser);
             setCart(login.cart);
@@ -43,6 +43,8 @@ function App() {
     }
   }
 
+
+
   const userObject = {
     loggedIn: loggedIn,
     setLogin: setLogin,
@@ -50,7 +52,7 @@ function App() {
     setCurrentUser: setCurrentUser,
     cart: cart,
     setCart: setCart,
-    updateCart: updateCart
+    updateCart: updateCart,
   }
 
   return (
@@ -66,13 +68,13 @@ function App() {
           <Route path="/login" element={<Login/>}/>
           <Route path="/sign-up" element={<SignUp/>}/>
           <Route path="/account" element={<MyAccount />}/>
-          <Route path="/admin" element={<Admin />}/>
           <Route path="/admin/users" element={<AdminUsers />}/>
           <Route path="/admin/products" element={<AdminProducts />}/>
           <Route path="/admin/products/new" element={<AddProduct />}/>
           <Route path="/admin/sales" element={<Sales />}/>
           <Route path="/admin/mrinward" element={<MRInward />}/>
           <Route path="/admin/mrinward/new" element={<NewMR />}/>
+          <Route path="/admin/mrinward/:mrid/edit" element={<NewMR />}/>
           <Route path="*" element={<h3>404 - Page not found</h3>}/>
         </Routes>
       </div>
