@@ -6,17 +6,17 @@ export class EmployeeController {
     constructor(private readonly employeeService : EmployeeService) {}
 
     @Get('/add')
-    AddEmployee(): any {
+    AddEmployee(): string {
         return this.employeeService.AddEmployee();
     }
 
     @Get('/update')
-    UpdateEmployee(): any {
+    UpdateEmployee(): string {
         return this.employeeService.UpdateEmployee();
     }
 
     @Get('/delete')
-    DeleteEmployee(): any {
+    DeleteEmployee(): string {
         return this.employeeService.DeleteEmployee();
     }
 

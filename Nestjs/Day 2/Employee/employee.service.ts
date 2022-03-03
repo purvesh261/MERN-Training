@@ -26,17 +26,17 @@ export class EmployeeService {
 
     module = "Employee"
 
-    AddEmployee(): any {
+    AddEmployee(): string {
         this.sharedService.DisplayAction(this.module, "add employee")
         return "Employee added: " + this.employee.employeeName;
     }
 
-    UpdateEmployee(): any {
+    UpdateEmployee(): string {
         this.sharedService.DisplayAction(this.module, "update employee")
         return "Employee Updated: " + this.employee2.employeeName;
     }
 
-    DeleteEmployee() : any {
+    DeleteEmployee() : string {
         this.sharedService.DisplayAction(this.module, "delete employee")
         return "Employee Deleted: " + this.employee3.employeeName;
     }
